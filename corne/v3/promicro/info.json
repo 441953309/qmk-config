@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "Corne Elite-C",
+    "keyboard_name": "Corne ProMicro",
     "usb": {
         "device_version": "3.0.0"
     },
@@ -18,5 +18,5 @@
         "soft_serial_pin": "D2"
     },
     "processor": "atmega32u4",
-    "bootloader": "atmel-dfu"
+    "bootloader": "caterina"
 }

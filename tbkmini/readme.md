@@ -13,5 +13,5 @@ The template is:
 ```shell
 qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
 ```
-| v2 (Elite-C)    | `qmk compile -kb qoo/tbkmini/v2/elitec -km default`      | `qmk compile -kb qoo/tbkmini/v2/elitec -km via`      |
-| v2 (Helios)     | `qmk compile -kb qoo/tbkmini/v2/helios -km default`   | `qmk compile -kb qoo/tbkmini/v2/helios -km via`  |
+| v2 (ProMicro) | `qmk compile -kb qoo/tbkmini/v2/promicro -km default`  | `qmk compile -kb qoo/tbkmini/v2/promicro -km via`      |
+| v2 (RP2040)   | `qmk compile -kb qoo/tbkmini/v2/rp2040 -km default`    | `qmk compile -kb qoo/tbkmini/v2/rp2040 -km via`  |

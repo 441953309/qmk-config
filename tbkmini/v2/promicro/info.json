@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "TBK Mini Elite-C",
+    "keyboard_name": "TBK Mini ProMicro",
     "usb": {
         "device_version": "2.0.0"
     },
@@ -18,5 +18,5 @@
         "soft_serial_pin": "D2"
     },
     "processor": "atmega32u4",
-    "bootloader": "atmel-dfu"
+    "bootloader": "caterina"
 }

@@ -17,5 +17,5 @@ The template is:
 ```shell
 qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
 ```
-| v3 (Elite-C)    | `qmk compile -kb qoo/corne/v3/elitec -km default`     | `qmk compile -kb qoo/corne/v3/elitec -km via`      |
-| v3 (Helios)     | `qmk compile -kb qoo/tbkmini/v2/helios -km default`   | `qmk compile -kb qoo/tbkmini/v2/helios -km via`  |
+| v3 (ProMicro) | `qmk compile -kb qoo/corne/v3/promicro -km default`  | `qmk compile -kb qoo/corne/v3/promicro -km via`
+| v3 (Helios)   | `qmk compile -kb qoo/tbkmini/v2/helios -km default`   | `qmk compile -kb qoo/tbkmini/v2/helios -km via`  |
