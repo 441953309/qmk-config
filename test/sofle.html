@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/konva@9.2.0/konva.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Konva Circle Demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+
+        #container{
+          margin: 10px;
+          display: inline-block;
+          border: 1px solid black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      const stage = new Konva.Stage({
+        container: 'container',
+        width: 224*5,
+        height: 64*5,
+      });
+
+      const layer = new Konva.Layer();
+
+      const points = [
+        // Left side underglow
+        { x:96, y:40}, { x:16, y:20}, { x:48, y:10}, { x:80, y:18}, { x:88, y:60}, { x:56, y:57}, { x:24, y:60},
+        // Left side Matrix
+        { x:32, y:57}, { x: 0, y:48}, { x: 0, y:36}, { x: 0, y:24}, { x: 0, y:12},
+        { x:16, y:12}, { x:16, y:24}, { x:16, y:36}, { x:16, y:48}, { x:48, y:55},
+        { x:64, y:57}, { x:32, y:45}, { x:32, y:33}, { x:32, y:21}, { x:32, y: 9},
+        { x:48, y: 7}, { x:48, y:19}, { x:48, y:31}, { x:48, y:43}, { x:80, y:59},
+        { x:96, y:64}, { x:64, y:45}, { x:64, y:33}, { x:64, y:21}, { x:64, y: 9},
+        { x:80, y:10}, { x:80, y:22}, { x:80, y:34}, { x:80, y:47},
+
+
+        // Right side underglow
+        { x:128, y:40}, { x:208, y:20}, { x:176, y:10}, { x:144, y:18}, { x:136, y:60}, { x:168, y:57}, { x:200, y:60},
+        // Right side Matrix
+        { x:192, y:57}, { x:224, y:48}, { x:224, y:36}, { x:224, y:24}, { x:224, y:12},
+        { x:208, y:12}, { x:208, y:24}, { x:208, y:36}, { x:208, y:48}, { x:176, y:55},
+        { x:160, y:57}, { x:192, y:45}, { x:192, y:33}, { x:192, y:21}, { x:192, y: 9},
+        { x:176, y: 7}, { x:176, y:19}, { x:176, y:31}, { x:176, y:43}, { x:144, y:59},
+        { x:128, y:64}, { x:160, y:45}, { x:160, y:33}, { x:160, y:21}, { x:160, y: 9},
+        { x:144, y:10}, { x:144, y:22}, { x:144, y:34}, { x:144, y:47},
+      ]
+
+      const flags = [
+        0, 2, 2, 2, 2, 2, 2,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4,
+        0, 2, 2, 2, 2, 2, 2,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4, 4,
+        4, 4, 4, 4
+      ]
+      
+      points.forEach((item, index)=>{
+        const circle = new Konva.Circle({
+          x: item.x*5,
+          y: item.y*5,
+          radius: flags[index]==4?8:10,
+          fill: flags[index]==4?'red':'blue',
+          stroke: 'black',
+          strokeWidth: 1,
+        });
+        // add the shape to the layer
+        layer.add(circle)
+      })
+
+      // add the layer to the stage
+      stage.add(layer);
+    </script>
+  </body>
+</html>
