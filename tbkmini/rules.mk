@@ -17,4 +17,8 @@ AUDIO_ENABLE = no           # Audio output
 AUDIO_SUPPORTED = no        # Audio is not supported
 
 NKRO_ENABLE = yes           # Enable N-Key Rollover
-LTO_ENABLE = yes# Build Options
+LTO_ENABLE = yes
+
+EXTRAKEY_ENABLE = yes       # Audio control and System control
+ENCODER_ENABLE = no
+ENCODER_MAP_ENABLE = no
