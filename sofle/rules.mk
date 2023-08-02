@@ -12,7 +12,7 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-RGB_MATRIX_ENABLE = yes     	# Enable keyboard RGB matrix (do not use together with RGBLIGHT_ENABLE)
+RGB_MATRIX_ENABLE = no     	# Enable keyboard RGB matrix (do not use together with RGBLIGHT_ENABLE)
 AUDIO_ENABLE = no           # Audio output
 AUDIO_SUPPORTED = no        # Audio is not supported
 
