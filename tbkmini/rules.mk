@@ -6,7 +6,7 @@ RGB_MATRIX_SUPPORTED = yes  # RGB matrix is supported and enabled by default
 RGBLIGHT_SUPPORTED = yes    # RGB underglow is supported, but not enabled by default
 
 BOOTMAGIC_ENABLE = no     	# Enable Bootmagic Lite
-MOUSEKEY_ENABLE = no       	# Mouse keys
+MOUSEKEY_ENABLE = yes       # Mouse keys
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 
