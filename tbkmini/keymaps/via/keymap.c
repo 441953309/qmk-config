@@ -41,11 +41,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //,-----------------------------------------------------.                    ,-----------------------------------------------------.
          KC_GRV, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  EE_CLR,                      KC_HOME, KC_PGDN, KC_PGUP,  KC_END, XXXXXXX,  KC_DEL,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, XXXXXXX,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX,
+        RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, QK_MAKE,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, XXXXXXX,                      KC_MPRV, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT, KC_MPLY,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LCTL, XXXXXXX,  KC_SPC,     KC_ENT, XXXXXXX, KC_LALT
+                                            KC_LCTL, KC_LSFT,  KC_SPC,     KC_ENT, XXXXXXX, KC_LALT
                                         //`--------------------------'  `--------------------------'
     )
 };
