@@ -1,11 +1,5 @@
 {
     "keyboard_name": "TBK-Mini ProMicro",
-    "usb": {
-        "device_version": "2.0.0"
-    },
-    "rgb_matrix": {
-        "driver": "WS2812"
-    },
     "ws2812": {
         "pin": "D3"
     },
