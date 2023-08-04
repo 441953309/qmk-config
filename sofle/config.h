@@ -1,5 +1,9 @@
 #pragma once
 
+// #define DYNAMIC_KEYMAP_LAYER_COUNT 4
+
+#define ENABLE_COMPILE_KEYCODE
+
 /* RGB matrix support. */
 #ifdef RGB_MATRIX_ENABLE
     #define SPLIT_TRANSPORT_MIRROR
@@ -18,7 +22,7 @@
 
     #define RGB_MATRIX_KEYPRESSES // reacts to keypresses 
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
-    #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
-    #define ENABLE_RGB_MATRIX_SPLASH
-    #define ENABLE_RGB_MATRIX_SOLID_SPLASH
+    // #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
+    // #define ENABLE_RGB_MATRIX_SPLASH
+    // #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #endif
