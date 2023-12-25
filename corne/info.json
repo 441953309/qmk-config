@@ -1,9 +1,27 @@
 {
-    "url": "https://www.bastardkb.com/tbk-mini",
+    "url": "https://github.com/foostan/crkbd",
     "usb": {
         "pid": "0x0001",
         "vid": "0x4653"
     },
+    "rgb_matrix": {
+        "driver": "ws2812"
+    },
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": false,
+        "nkro": true,
+        "oled": true,
+        "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
+    },
+    "split": {
+        "enabled": true
+    },
+    "diode_direction": "COL2ROW",
     "community_layouts": ["split_3x6_3"],
     "layouts": {
         "LAYOUT_split_3x6_3": {
