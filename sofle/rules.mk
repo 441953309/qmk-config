@@ -16,7 +16,7 @@ RGB_MATRIX_ENABLE = no     	# Enable keyboard RGB matrix (do not use together wi
 AUDIO_ENABLE = no           # Audio output
 AUDIO_SUPPORTED = no        # Audio is not supported
 
-OLED_ENABLE = no
+OLED_ENABLE = yes
 OLED_DRIVER = ssd1306
 
 NKRO_ENABLE = yes           # Enable N-Key Rollover

@@ -10,7 +10,7 @@
     "features": {
         "bootmagic": false,
         "mousekey": false,
-        "extrakey": false,
+        "extrakey": true,
         "nkro": true,
         "oled": true,
         "rgb_matrix": true
