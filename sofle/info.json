@@ -4,6 +4,24 @@
         "pid": "0x0287",
         "vid": "0xFC32"
     },
+    "rgb_matrix": {
+        "driver": "ws2812"
+    },
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": true,
+        "nkro": true,
+        "lto": true,
+        "oled": false,
+        "rgb_matrix": false
+    },
+    "build": {
+        "lto": true
+    },
+    "split": {
+        "enabled": true
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
