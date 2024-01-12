@@ -29,7 +29,7 @@
     // #define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
     // #define ENABLE_RGB_MATRIX_HUE_PENDULUM
 
-    #define RGB_MATRIX_KEYPRESSES // reacts to keypresses 
+    #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
     // #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
     // #define ENABLE_RGB_MATRIX_SPLASH

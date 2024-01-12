@@ -19,5 +19,5 @@
     },
     "diode_direction": "COL2ROW",
     "processor": "RP2040",
-    "bootloader": "RP2040"
+    "bootloader": "rp2040"
 }
