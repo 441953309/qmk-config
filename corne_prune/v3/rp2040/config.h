@@ -1,6 +1,9 @@
 #pragma once
 
+// #define PICO_XOSC_STARTUP_DELAY_MULTIPLIER 128
+
 /* Handedness. */
+// #define MASTER_LEFT
 #define MASTER_LEFT
 
 // To use the handedness pin, resistors need to be installed on the adapter PCB.

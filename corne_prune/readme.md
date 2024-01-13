@@ -14,4 +14,7 @@ The template is:
 qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
 ```
 
-| v3 (RP2040)   | `qmk compile -kb qoo/corne_prune/v3/rp2040 -km default`    |
+| v3 (RP2040)   | `qmk compile -kb qoo/corne_prune/v3/rp2040 -km default -bl uf2-split-left`    |
+
+qmk flash -kb qoo/corne_prune/v3/rp2040 -km default -bl uf2-split-left
+qmk flash -kb qoo/corne_prune/v3/rp2040 -km default -bl uf2-split-right
