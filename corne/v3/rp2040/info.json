@@ -3,9 +3,6 @@
     "usb": {
         "device_version": "3.0.0"
     },
-    "rgb_matrix": {
-        "driver": "WS2812"
-    },
     "ws2812": {
         "pin": "GP0",
         "driver": "vendor"
