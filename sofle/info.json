@@ -12,7 +12,6 @@
         "mousekey": false,
         "extrakey": true,
         "nkro": true,
-        "lto": true,
         "oled": false,
         "rgb_matrix": false
     },
