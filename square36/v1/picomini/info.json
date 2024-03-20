@@ -1,0 +1,15 @@
+{
+    "keyboard_name": "Square36 PicoMini",
+    "usb": {
+        "device_version": "1.0.0"
+    },
+    "split": {
+        "soft_serial_pin": "GP1"
+    },
+    "matrix_pins": {
+        "cols": [ "GP20", "GP21", "GP22", "GP23", "GP25"],
+        "rows": ["GP12", "GP11", "GP10", "GP9"]
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040"
+}
