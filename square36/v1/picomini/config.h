@@ -1,7 +1,8 @@
 #pragma once
 
 /* Handedness. */
-#define MASTER_LEFT
+// #define MASTER_LEFT
+#define EE_HANDS
 
 /* Reset. */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET

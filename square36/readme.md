@@ -10,3 +10,7 @@ qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
 
 v1 (PicoMini)
 `qmk compile -kb qoo/square36/v1/picomini -km default`
+
+//Handedness by EE_HANDS
+qmk flash -kb qoo/square36/v1/picomini -km default -bl uf2-split-left
+qmk flash -kb qoo/square36/v1/picomini -km default -bl uf2-split-right
