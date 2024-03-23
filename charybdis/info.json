@@ -1,10 +1,7 @@
 {
     "rgb_matrix": {
-        "animations": {
-            "cycle_left_right": true
-        },
         "default": {
-            "speed": 32,
+            "speed": 164,
             "val": 64
         },
         "sleep": true
