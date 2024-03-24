@@ -12,6 +12,9 @@
         "oled": false,
         "rgb_matrix": true
     },
+    "tapping": {
+        "term": 175
+    },
     "build": {
         "lto": true
     },

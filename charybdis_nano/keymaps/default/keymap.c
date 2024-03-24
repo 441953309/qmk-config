@@ -7,7 +7,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|------------+--------------+--------------+--------------+--------------|            |----------+--------------+--------------+--------------+--------------|
              LT(1,KC_A),  LGUI_T(KC_S),  LALT_T(KC_D),  LSFT_T(KC_F),          KC_G,                   KC_H,  RSFT_T(KC_J),  RALT_T(KC_K),  RGUI_T(KC_L), RCTL_T(KC_QUOT),
         //|------------+--------------+--------------+--------------+--------------|            |----------+--------------+--------------+--------------+--------------|
-             LT(6,KC_Z),          KC_X,          KC_C,          KC_V,          KC_B,                   KC_N,          KC_M,       KC_COMM,        KC_DOT, LT(6,KC_SLSH),
+                   KC_Z,          KC_X,          KC_C,          KC_V,          KC_B,                   KC_N,          KC_M,       KC_COMM,        KC_DOT, LT(6,KC_SLSH),
         //|------------+--------------+--------------+--------------+--------------|            |----------+--------------+--------------+--------------+--------------|
                                        LCTL_T(KC_ESC),  LT(2,KC_TAB),  LT(5,KC_SPC),                 KC_ENT,       KC_BSPC
                                     //`--------------------------------------------'            `----------------------------------------'
@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
             XXXXXXX, KC_LGUI, KC_LALT, KC_LSFT, XXXXXXX,          KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          KC_BTN3, KC_BTN1, KC_BTN2, DRGSCRL, SNIPING,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
                               KC_LCTL, KC_BSPC,  KC_ENT,           KC_ENT,  KC_DEL
                           //`--------------------------'        `--------------------------'
@@ -76,9 +76,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
             KC_LCTL, KC_LGUI, KC_LALT, KC_LSFT, XXXXXXX,              XXXXXXX, KC_RSFT, KC_RALT, KC_RGUI, KC_RCTL,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-            XXXXXXX, DRGSCRL, SNIPING,    KC_M,    KC_N,              XXXXXXX, XXXXXXX, SNIPING, DRGSCRL, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              KC_BTN3, KC_BTN1, KC_BTN2, DRGSCRL, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-                              KC_BTN2, KC_BTN1, KC_BTN3,              KC_BTN3, KC_BTN1
+                              XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX
                           //`--------------------------'            `--------------------------'
         )
 };
