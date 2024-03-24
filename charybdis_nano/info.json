@@ -6,7 +6,7 @@
     },
     "features": {
         "bootmagic": false,
-        "mousekey": false,
+        "mousekey": true,
         "extrakey": true,
         "nkro": true,
         "oled": false,
