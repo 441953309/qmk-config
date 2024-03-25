@@ -17,9 +17,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
             XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, KC_MPLY,          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, KC_LGUI, KC_LALT, KC_LSFT, XXXXXXX,          KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
+            XXXXXXX, DRGSCRL, KC_LALT, KC_LSFT, XXXXXXX,          KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          KC_BTN3, KC_BTN1, KC_BTN2, DRGSCRL, SNIPING,
+            XXXXXXX, SNIPING,   KC_F8,   KC_F2,  KC_F12,          KC_BTN3, KC_BTN1, KC_BTN2, DRGSCRL, SNIPING,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
                               KC_LCTL, KC_BSPC,  KC_ENT,           KC_ENT,  KC_DEL
                           //`--------------------------'        `--------------------------'
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
             KC_LCTL, KC_LGUI, KC_LALT, KC_LSFT, XXXXXXX,              XXXXXXX, KC_RSFT, KC_RALT, KC_RGUI, KC_RCTL,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              KC_BTN3, KC_BTN1, KC_BTN2, DRGSCRL, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              KC_BTN3, KC_BTN1, KC_BTN2, DRG_TOG, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
                               XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX
                           //`--------------------------'            `--------------------------'
