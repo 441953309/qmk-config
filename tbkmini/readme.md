@@ -25,3 +25,6 @@ qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
 //Handedness by EEPROM
 qmk flash -kb qoo/tbkmini/v2/rp2040 -km mac -bl uf2-split-left
 qmk flash -kb qoo/tbkmini/v2/rp2040 -km mac -bl uf2-split-right
+
+qmk flash -kb qoo/tbkmini/v2/rp2040 -km xy -bl uf2-split-left
+qmk flash -kb qoo/tbkmini/v2/rp2040 -km xy -bl uf2-split-right

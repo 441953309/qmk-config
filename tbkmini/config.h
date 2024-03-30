@@ -4,7 +4,7 @@
 // #define MASTER_LEFT
 #define EE_HANDS
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define DYNAMIC_KEYMAP_LAYER_COUNT 16
 
 /* RGB matrix support. */
 #ifdef RGB_MATRIX_ENABLE
