@@ -18,7 +18,6 @@
         "enabled": true
     },
     "diode_direction": "COL2ROW",
-    "community_layouts": ["split_4x6_5"],
     "layouts": {
         "LAYOUT_split_4x6_5": {
             "layout": [
