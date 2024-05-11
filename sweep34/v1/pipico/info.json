@@ -1,0 +1,19 @@
+{
+    "keyboard_name": "Sweep34 PiPico",
+    "usb": {
+        "device_version": "1.0.0"
+    },
+    "split": {
+        "soft_serial_pin": "GP1"
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP22", "GP16", "GP2", "GP5", "GP6"],
+            ["GP26", "GP17", "GP3", "GP7", "GP8"],
+            ["GP27", "GP21", "GP4", "GP9", "GP10"],
+            [null, null, null, "GP14", "GP15"]
+        ]
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040"
+}
