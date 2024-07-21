@@ -31,3 +31,6 @@ qmk compile -kb qoo/charybdis_nano/v2/rp2040 -km default
 //Handedness by EE_HANDS
 qmk flash -kb qoo/charybdis_nano/v2/rp2040 -km default -bl uf2-split-left
 qmk flash -kb qoo/charybdis_nano/v2/rp2040 -km default -bl uf2-split-right
+
+qmk flash -kb qoo/charybdis_nano/v2/rp2040 -km via -bl uf2-split-left
+qmk flash -kb qoo/charybdis_nano/v2/rp2040 -km via -bl uf2-split-right
