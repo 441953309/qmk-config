@@ -1,0 +1,19 @@
+{
+    "keyboard_name": "GameBox58 RP2040",
+    "usb": {
+        "device_version": "1.0.0"
+    },
+    "ws2812": {
+        "pin": "GP0",
+        "driver": "vendor"
+    },
+    "split": {
+        "soft_serial_pin": "GP14"
+    },
+    "matrix_pins": {
+        "cols": ["GP29", "GP28", "GP27", "GP26", "GP22", "GP20"],
+        "rows": ["GP4", "GP5", "GP6", "GP7", "GP8"]
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040"
+}
