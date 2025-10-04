@@ -1,4 +1,7 @@
 {
   "manufacturer": "Qoo Keyboards",
-  "maintainer": "Qoo"
+  "maintainer": "Qoo",
+  "usb": {
+    "vid": "0x303B"
+  }
 }

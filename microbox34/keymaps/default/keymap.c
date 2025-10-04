@@ -15,11 +15,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [1] = LAYOUT_split_3x5_2(
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU,S(KC_TAB),         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU,S(KC_TAB),         XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
             XXXXXXX, KC_LGUI, KC_LALT, KC_LSFT,  KC_TAB,          KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          KC_CALC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
                                         KC_BSPC, KC_ENT,           KC_ENT,  KC_DEL
                                    //`-----------------'        `-----------------'
@@ -43,14 +43,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
               KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,              KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-             KC_F11,  KC_F12, XXXXXXX, XXXXXXX, XXXXXXX,              KC_MPRV, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT,
+             KC_F11,  KC_F12, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
                                        XXXXXXX,   MO(4),              XXXXXXX, XXXXXXX
                                    //`-----------------'            `-----------------'
         ),
     [4] = LAYOUT_split_3x5_2(
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,  EE_CLR,               EE_CLR, QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,  EE_CLR,               EE_CLR, QK_BOOT, XXXXXXX, XXXXXXX, DB_TOGG,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_MAKE,              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
             KC_SLSH,  KC_DOT, KC_COMM,    KC_M,    KC_N,              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------|            |--------+--------+--------+--------+--------|
-                                       XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX
+                                       XXXXXXX,  KC_SPC,              XXXXXXX, XXXXXXX
                                    //`-----------------'            `-----------------'
         )
 };
