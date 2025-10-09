@@ -1,15 +1,16 @@
 {
     "url": "https://github.com/josefadamcik/SofleKeyboard",
     "usb": {
-        "pid": "0x0287",
-        "vid": "0xFC32"
+        "pid": "0x0010"
     },
     "rgb_matrix": {
         "driver": "ws2812"
     },
     "features": {
         "bootmagic": false,
-        "mousekey": false,
+        "console": true,
+        "command": false,
+        "mousekey": true,
         "extrakey": true,
         "nkro": true,
         "oled": false,
@@ -17,6 +18,9 @@
     },
     "build": {
         "lto": true
+    },
+    "tapping": {
+        "term": 175
     },
     "split": {
         "enabled": true

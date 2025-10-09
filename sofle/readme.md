@@ -12,6 +12,7 @@ The template is:
 
 ```shell
 qmk compile -kb {FOLDER}/{KEYBOARD}/{VERSION}/{SHIELD} -km {KEYMAP}
+qmk compile -kb qoo/sofle/v2/rp2040 -km default
 ```
 | v2 (ProMicro) | `qmk compile -kb qoo/sofle/v2/promicro -km default`  | `qmk compile -kb qoo/sofle/v2/promicro -km via`  |
 | v2 (RP2040)   | `qmk compile -kb qoo/sofle/v2/rp2040 -km default`    | `qmk compile -kb qoo/sofle/v2/rp2040 -km via`    |
