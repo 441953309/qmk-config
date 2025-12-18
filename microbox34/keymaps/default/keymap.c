@@ -15,11 +15,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [1] = LAYOUT_split_3x5_2(
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU,S(KC_TAB),         XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX,
+            KC_MPLY, KC_VOLD, KC_MUTE, KC_VOLU,S(KC_TAB),         KC_HOME, KC_PGDN, KC_PGUP,  KC_END, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
             XXXXXXX, KC_LGUI, KC_LALT, KC_LSFT,  KC_TAB,          KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          KC_CALC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX,   KC_F8,   KC_F2,  KC_F12,          KC_CALC, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX,
         //|--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------|
                                         KC_BSPC, KC_ENT,           KC_ENT,  KC_DEL
                                    //`-----------------'        `-----------------'
