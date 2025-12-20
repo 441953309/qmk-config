@@ -13,45 +13,45 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        //,---------------------------------------------------------------------------------.                        ,-----------------------------------------------------------------------------.
-            XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,        KC_Q,          KC_W,          KC_E,          KC_R,          KC_T,                                   KC_Y,          KC_U,          KC_I,          KC_O,    KC_P, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,  LT(1,KC_A),  LGUI_T(KC_S),  LALT_T(KC_D),  LSFT_T(KC_F),          KC_G,                                   KC_H,  RSFT_T(KC_J),  RALT_T(KC_K),  RGUI_T(KC_L), KC_BSPC, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,        KC_Z,          KC_X,          KC_C,          KC_V,          KC_B,   KC_MUTE,      KC_MPLY,          KC_N,          KC_M,       KC_COMM,        KC_DOT, KC_SLSH, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------+----------|  |----------+--------------+--------------+--------------+--------------+--------+--------|
-                                        XXXXXXX,       XXXXXXX,LCTL_T(KC_ESC),  LT(2,KC_TAB),    KC_SPC,       KC_ENT, LT(3,KC_BSPC),RCTL_T(KC_DEL),       XXXXXXX,       XXXXXXX
-                              //`----------------------------------------------------------------------'  `----------------------------------------------------------------------'
+        //,---------------------------------------------------------------------------------.                         ,-----------------------------------------------------------------------------------.
+            XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                 XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------------+--------|
+            XXXXXXX,        KC_Q,          KC_W,          KC_E,          KC_R,          KC_T,                                    KC_Y,          KC_U,          KC_I,          KC_O,          KC_P, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------------+--------|
+            XXXXXXX,  LT(1,KC_A),  LGUI_T(KC_S),  LALT_T(KC_D),  LSFT_T(KC_F),          KC_G,                                    KC_H,  RSFT_T(KC_J),  RALT_T(KC_K),  RGUI_T(KC_L),RCTL_T(KC_QUOT),XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------------+--------|
+            XXXXXXX,  LT(5,KC_Z),          KC_X,          KC_C,          KC_V,          KC_B,   KC_MUTE,       KC_MPLY,          KC_N,          KC_M,       KC_COMM,        KC_DOT,       KC_SLSH, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------+----------|   |----------+--------------+--------------+--------------+--------------+--------------+--------|
+                                        XXXXXXX,       XXXXXXX,LCTL_T(KC_ESC),  LT(2,KC_SPC),   XXXXXXX,       XXXXXXX,        KC_ENT, LT(3,KC_BSPC),       XXXXXXX,       XXXXXXX
+                              //`----------------------------------------------------------------------'   `----------------------------------------------------------------------'
         ),
 
     [1] = LAYOUT(
-        //,---------------------------------------------------------------------------------.                        ,-----------------------------------------------------------------------------.
-            XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,     XXXXXXX,       KC_VOLD,       KC_MUTE,       KC_VOLU,       KC_MPLY,                                XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,     XXXXXXX,       KC_LGUI,       KC_LALT,       KC_LSFT,       XXXXXXX,                                KC_LEFT,       KC_DOWN,         KC_UP,      KC_RIGHT, KC_BSPC, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+--------------+--------------+--------------+--------+--------|
-            XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,         KC_F2,        KC_F12,   XXXXXXX,      XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
-        //|--------+------------+--------------+--------------+--------------+--------------+----------|  |----------+--------------+--------------+--------------+--------------+--------+--------|
-                                        XXXXXXX,       XXXXXXX,       KC_LCTL,       KC_BSPC,    KC_ENT,       KC_ENT,       XXXXXXX,       KC_RCTL,       XXXXXXX,       XXXXXXX
-                              //`----------------------------------------------------------------------'  `----------------------------------------------------------------------'
+        //,---------------------------------------------------------------------------------.                         ,-----------------------------------------------------------------------------.
+            XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                 XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+            XXXXXXX,     KC_MPLY,       KC_VOLD,       KC_MUTE,       KC_VOLU,     S(KC_TAB),                                 KC_HOME,       KC_PGDN,       KC_PGUP,        KC_END, XXXXXXX, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+            XXXXXXX,     XXXXXXX,       KC_LGUI,       KC_LALT,       KC_LSFT,        KC_TAB,                                 KC_LEFT,       KC_DOWN,         KC_UP,      KC_RIGHT, XXXXXXX, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+            XXXXXXX,     XXXXXXX,       XXXXXXX,         KC_F8,         KC_F2,        KC_F12,   XXXXXXX,       XXXXXXX,       KC_CALC,       KC_MPRV,       KC_MPLY,       KC_MNXT, XXXXXXX, XXXXXXX,
+        //|--------+------------+--------------+--------------+--------------+--------------+----------|   |----------+--------------+--------------+--------------+--------------+--------+--------|
+                                        XXXXXXX,       XXXXXXX,       KC_BSPC,        KC_ENT,   XXXXXXX,       XXXXXXX,        KC_ENT,        KC_DEL,       XXXXXXX,        XXXXXXX
+                              //`----------------------------------------------------------------------'   `----------------------------------------------------------------------'
         ),
 
     [2] = LAYOUT(
-      //,---------------------------------------------------------------------------------.                        ,-----------------------------------------------------------------------------------.
-          XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX,
-      //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+----------------+----------------+----------------+--------+--------|
-          XXXXXXX,        KC_1,          KC_2,          KC_3,          KC_4,          KC_5,                                KC_UNDS,         KC_PLUS,         KC_LBRC,         KC_LCBR, KC_LPRN, XXXXXXX,
-      //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+----------------+----------------+----------------+--------+--------|
-          XXXXXXX,        KC_6,  LGUI_T(KC_7),  LALT_T(KC_8),  LSFT_T(KC_9),          KC_0,                                KC_MINS,  RSFT_T(KC_EQL), RALT_T(KC_RBRC),         KC_RCBR, KC_RPRN, XXXXXXX,
-      //|--------+------------+--------------+--------------+--------------+--------------|                        |--------------+----------------+----------------+--------------+--------+--------|
-          XXXXXXX,      KC_DOT,       KC_QUOT,       KC_DQUO,        KC_GRV,       KC_TILD,   XXXXXXX,      XXXXXXX,       KC_SLSH,         KC_ASTR,         KC_COLN,         KC_SCLN, KC_BSLS, XXXXXXX,
-      //|--------+------------+--------------+--------------+--------------+--------------+----------|  |----------+--------------+----------------+----------------+----------------+--------+--------|
-                                      XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,   XXXXXXX,       KC_ENT,       XXXXXXX,         KC_RCTL,         XXXXXXX,         XXXXXXX
-                            //`----------------------------------------------------------------------'  `----------------------------------------------------------------------------'
+      //,---------------------------------------------------------------------------------.                         ,-----------------------------------------------------------------------------.
+          XXXXXXX,     XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,                                 XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX,
+      //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+          XXXXXXX,     KC_EXLM,         KC_AT,       KC_HASH,        KC_DLR,       KC_PERC,                                 KC_CIRC,       KC_AMPR,       KC_ASTR,       KC_SCLN, KC_COLN, XXXXXXX,
+      //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+          XXXXXXX,        KC_1,          KC_2,          KC_3,          KC_4,          KC_5,                                 KC_MINS,        KC_EQL,       KC_LBRC,       KC_LCBR, KC_LPRN, XXXXXXX,
+      //|--------+------------+--------------+--------------+--------------+--------------|                         |--------------+--------------+--------------+--------------+--------+--------|
+          XXXXXXX,        KC_6,          KC_7,          KC_8,          KC_9,          KC_0,   XXXXXXX,       XXXXXXX,       KC_UNDS,       KC_PLUS,       KC_RBRC,       KC_RCBR, KC_RPRN, XXXXXXX,
+      //|--------+------------+--------------+--------------+--------------+--------------+----------|   |----------+--------------+--------------+--------------+--------------+--------+--------|
+                                      XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,   XXXXXXX,       XXXXXXX,  LT(3,KC_GRV),       KC_BSLS,       XXXXXXX,       XXXXXXX
+                            //`----------------------------------------------------------------------'   `----------------------------------------------------------------------'
       ),
 
     [3] = LAYOUT(
@@ -62,36 +62,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
             XXXXXXX,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-            XXXXXXX,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, KC_MPRV, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT, KC_MPLY,
+            XXXXXXX,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                               XXXXXXX, XXXXXXX, XXXXXXX,   MO(4), XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
                           //`--------------------------------------------'  `--------------------------------------------'
         ),
+
     [4] = LAYOUT(
         //,-----------------------------------------------------.                    ,------------------------------------------------------------------.
             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |---------------------+--------+--------+--------+--------+--------|
-            XXXXXXX,   TG(5), XXXXXXX, XXXXXXX, QK_BOOT,  EE_CLR,                                    EE_CLR, QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,  EE_CLR, XXXXXXX,                                    EE_CLR, QK_BOOT, XXXXXXX, XXXXXXX, DB_TOGG, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |---------------------+--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_MAKE,                                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_MAKE, XXXXXXX,                                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |---------------------+--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, QK_MAGIC_TOGGLE_NKRO, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_MAGIC_TOGGLE_NKRO, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+---------------------+--------+--------+--------+--------+--------|
                               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,              XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
                           //`--------------------------------------------'  `---------------------------------------------------------'
         ),
-    //Game
+
     [5] = LAYOUT(
         //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-             KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_DEL,
+            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-             KC_ESC,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_BSPC,
+            XXXXXXX,    KC_P,    KC_O,    KC_I,    KC_U,    KC_Y,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-             KC_TAB,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
+            XXXXXXX, KC_QUOT,    KC_L,    KC_K,    KC_J,    KC_H,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-            KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,    KC_MPLY,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
+            XXXXXXX, KC_SLSH,  KC_DOT, KC_COMM,    KC_M,    KC_N, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                              KC_LGUI, KC_LALT, KC_LCTL, XXXXXXX,  KC_SPC,     KC_ENT,   TG(5), KC_RCTL, KC_RALT, KC_RGUI
+                              XXXXXXX, XXXXXXX, XXXXXXX,  KC_SPC, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
                           //`--------------------------------------------'  `--------------------------------------------'
         )
 };
@@ -157,3 +158,116 @@ bool oled_task_user(void) {
 }
 
 #endif
+
+// 记录层切换
+static layer_state_t prev_layer_state = 0;
+layer_state_t layer_state_set_user(layer_state_t state) {
+    layer_state_t diff = state ^ prev_layer_state;
+    for (int i = 0; i < 32; i++) {
+        if ((diff >> i) & 1) {
+            bool on = (state >> i) & 1;
+            printf("layer_changed: layer %d state %d\n", i, on ? 1 : 0);
+        }
+    }
+    prev_layer_state = state;
+    return state;
+}
+
+// 记录修饰键状态
+static uint8_t last_mods = 0;
+void log_modifier_change(void) {
+    uint8_t current_mods = get_mods();
+    if (current_mods != last_mods) {
+        printf("modifiers_changed: 0x%02X\n", current_mods);
+        last_mods = current_mods;
+    }
+}
+
+// LT/MT 状态跟踪
+typedef struct {
+    bool active;
+    uint16_t keycode;    // 基础按键码（Tap时使用）
+    uint8_t row;
+    uint8_t col;
+    uint16_t press_time;
+    bool hold_detected;
+} lt_mt_tracker_t;
+
+#define MAX_TRACKERS 10
+static lt_mt_tracker_t trackers[MAX_TRACKERS] = {0};
+
+// 记录 LT/MT 事件
+void log_lt_mt_event(uint8_t row, uint8_t col, uint16_t keycode, const char* event_type, uint16_t held_time) {
+    if (IS_QK_LAYER_TAP(keycode)) {
+        printf("[QMK-LOG] row=%d col=%d LT(%d) 0x%04X %s hold_tap timer=%d\n", row, col, QK_LAYER_TAP_GET_LAYER(keycode), QK_LAYER_TAP_GET_TAP_KEYCODE(keycode), event_type, held_time);
+    } else if (IS_QK_MOD_TAP(keycode)) {
+        const char* mod = "";
+        uint8_t mods = QK_MOD_TAP_GET_MODS(keycode);
+        if (mods & MOD_LCTL || mods & MOD_RCTL) mod = "CTRL";
+        else if (mods & MOD_LSFT || mods & MOD_RSFT) mod = "SHIFT";
+        else if (mods & MOD_LALT || mods & MOD_RALT) mod = "ALT";
+        else if (mods & MOD_LGUI || mods & MOD_RGUI) mod = "GUI";
+        printf("[QMK-LOG] row=%d col=%d MT(%s) 0x%04X %s hold_tap timer=%d\n", row, col, mod, QK_MOD_TAP_GET_TAP_KEYCODE(keycode), event_type, held_time);
+    }
+}
+
+// 主处理函数
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    log_modifier_change(); // 检查修饰键变化
+
+    uint8_t row = record->event.key.row;
+    uint8_t col = record->event.key.col;
+    bool pressed = record->event.pressed;
+    uint16_t time = record->event.time;
+    printf("[QMK-LOG] row=%d col=%d pressed=%s keycode=0x%04X time=%d\n", row, col, pressed ? "true" : "false", keycode, time);
+
+    if (IS_QK_LAYER_TAP(keycode) || IS_QK_MOD_TAP(keycode)) {
+        if (pressed) {
+            // 记录按下状态
+            for (int i = 0; i < MAX_TRACKERS; i++) {
+                if (!trackers[i].active) {
+                    trackers[i].active = true;
+                    trackers[i].keycode = keycode;                   // 存储LT/MT功能码
+                    trackers[i].row = row;
+                    trackers[i].col = col;
+                    trackers[i].press_time = time;
+                    trackers[i].hold_detected = false;
+                    // 发送 undecided hold_tap 事件
+                    log_lt_mt_event(row, col, keycode, "undecided", 0);
+                    break;
+                }
+            }
+        } else {
+            // 释放时检查状态并记录
+            for (int i = 0; i < MAX_TRACKERS; i++) {
+                if(trackers[i].active && trackers[i].row == row && trackers[i].col == col){
+                    uint16_t held_time = timer_elapsed(trackers[i].press_time);
+                    // 发送 tap/release 事件
+                    if (trackers[i].hold_detected) {
+                        log_lt_mt_event(row, col, keycode, "released", held_time);
+                    } else {
+                        log_lt_mt_event(row, col, keycode, "tap", held_time);
+                    }
+                    trackers[i].active = false;
+                    break;
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
+// 定期检查超时
+void matrix_scan_user(void) {
+    for (int i = 0; i < MAX_TRACKERS; i++) {
+        if (trackers[i].active) {
+            uint16_t held_time = timer_elapsed(trackers[i].press_time);
+            if (held_time >= TAPPING_TERM && !trackers[i].hold_detected) {
+                // 超时，发送 hold hold_tap 事件
+                log_lt_mt_event(trackers[i].row, trackers[i].col, trackers[i].keycode, "hold", held_time);
+                trackers[i].hold_detected = true;
+            }
+        }
+    }
+}
