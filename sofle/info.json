@@ -14,7 +14,7 @@
         "extrakey": true,
         "nkro": true,
         "oled": false,
-        "rgb_matrix": false
+        "rgb_matrix": true
     },
     "build": {
         "lto": true
